@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamcity-plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:schemas-jetbrains-com:teamcity-plugin-v1-xml">
+  <info>
+    <name>locust</name>
+    <display-name>Locust.io test runner</display-name>
+    <version>1.0</version>
+    <description>Load testing with locust.io</description>
+    <download-url>Plugin download URL</download-url>
+    <email>opensource@alexandergor.com</email>
+    <vendor>
+      <name>Alexander Gor</name>
+      <url>http://alexandergor.com</url>
+      <logo>Plugin vendor logo URL</logo>
+    </vendor>
+  </info>
+  <deployment use-separate-classloader="true"/>
+</teamcity-plugin>

@@ -31,10 +31,10 @@ class LocustService: BuildServiceAdapter() {
         val arguments = arrayListOf(
             "-f", getParam(cfgBean.locustFileKey),
             "--host", getParam(cfgBean.targetUrlKey),
-            "-c", getParam(cfgBean.usersNumberKey),
+            "-u", getParam(cfgBean.usersNumberKey),
             "-r", getParam(cfgBean.hatchRateKey),
             "-t", getParam(cfgBean.timeToRunKey),
-            "--no-web", "--only-summary", "--csv=build_%s".format(build.buildNumber)
+            "--headless", "--only-summary", "--csv=build_%s".format(build.buildNumber)
         )
 
         return SimpleProgramCommandLine(
@@ -45,7 +45,7 @@ class LocustService: BuildServiceAdapter() {
     override fun afterProcessFinished() {
         super.afterProcessFinished()
 
-        val report = workingDirectory.resolve("build_%s_requests.csv".format(build.buildNumber))
+        val report = workingDirectory.resolve("build_%s_stats.csv".format(build.buildNumber))
 
         if (report.exists()) {
             val reader = ReversedLinesFileReader(report, Charsets.UTF_8)

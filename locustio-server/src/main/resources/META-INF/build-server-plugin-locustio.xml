@@ -7,4 +7,5 @@
     <bean class="com.alexandergor.teamcity.locustio.RunTypesRegistrar"/>
     <bean class="com.alexandergor.teamcity.locustio.LocustRunType"/>
     <bean class="com.alexandergor.teamcity.locustio.LocustBuildResultFragment"/>
+    <bean class="com.alexandergor.teamcity.locustio.LocustBuildResultChart"/>
 </beans>

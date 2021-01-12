@@ -3,7 +3,7 @@
   <info>
     <name>locust</name>
     <display-name>Locust.io test runner</display-name>
-    <version>1.0</version>
+    <version>1.1</version>
     <description>Load testing with locust.io</description>
     <download-url>Plugin download URL</download-url>
     <email>opensource@alexandergor.com</email>

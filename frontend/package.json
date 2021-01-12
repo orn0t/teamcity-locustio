@@ -1,0 +1,36 @@
+{
+  "name": "locustio-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@jetbrains/icons": "^3.9.1",
+    "@jetbrains/ring-ui": "^3.0.63",
+    "@jetbrains/teamcity-api": "^2020.2.0-alpha.8",
+    "classnames": "^2.2.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-export-default-from": "^7.10.4",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-flow": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@jetbrains/browserslist-config-teamcity": "0.0.1",
+    "core-js": "^3.6.5",
+    "flow-bin": "^0.133.0",
+    "flow-typed": "^3.2.1",
+    "webpack": "^4.44.1",
+    "webpack-bundle-analyzer": "^3.8.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack --bail --env.production --env.analyze",
+    "flow": "flow"
+  },
+  "author": "Alexander Gor",
+  "license": "Apache License 2.0"
+}

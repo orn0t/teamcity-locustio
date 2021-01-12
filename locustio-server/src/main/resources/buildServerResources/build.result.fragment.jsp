@@ -21,7 +21,12 @@
   %><%@ taglib prefix="bs" tagdir="/WEB-INF/tags" %>
 <%@ taglib prefix="util" uri="/WEB-INF/functions/util" %>
 
-<style>.green { color: #1c8c32; } .red {color: #c22731; } .locustStatsTable { width: 100%; text-align: left; }</style>
+<style>
+    .green { color: #1c8c32; }
+    .red {color: #c22731; }
+    .locustStatsTable { width: 100%; text-align: left; margin-left: 15px;}
+    .locustStatsTable thead { border-bottom: 2px solid #eee; }
+</style>
 <bs:_collapsibleBlock title="Locust load performance" id="locustSummary" contentClass="locustSummary">
     <div class="locustStats">
         <table class="locustStatsTable">
